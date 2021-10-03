@@ -1,0 +1,14 @@
+{
+  "name": "mytestcafe_myadventure",
+  "version": "1.0.0",
+  "description": "Belajar Web TestCafe DBO",
+  "main": "index.js",
+  "scripts": {
+    "test-chrome": "node_modules/.bin/testcafe 'chrome:headless' tests/"
+  },
+  "author": "DhonyImamSaputra",
+  "license": "ISC",
+  "devDependencies": {
+    "testcafe": "^1.16.0"
+  }
+}
