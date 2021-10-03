@@ -4,14 +4,14 @@
   "description": "Belajar Web TestCafe DBO",
   "main": "index.js",
   "scripts": {
-    "test-gherkin": "node_modules/.bin/gherkin-testcafe chrome",
-    "test-chrome": "node_modules/.bin/testcafe 'chrome:headless' tests/"
+    "test-gherkin": "node_modules/.bin/gherkin-testcafe chrome tests/**/*.js tests/**/*.feature",
+    "test-chrome": "node_modules/.bin/testcafe 'chrome:headless' test_fixture/"
   },
   "author": "DhonyImamSaputra",
   "license": "ISC",
   "devDependencies": {
-    "testcafe": "^1.16.0",
-    "cucumber": "^5.1.0",
-    "gherkin-testcafe": "^2.5.2"
+    "@cucumber/cucumber": "^7.3.1",
+    "gherkin-testcafe": "^5.1.0",
+    "testcafe": "^1.16.0"
   }
 }

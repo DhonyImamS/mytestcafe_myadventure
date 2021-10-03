@@ -1,7 +1,7 @@
 {
     "browser": "chrome",
     "src": [
-        "test_gherkin/step_definitions/**/*.js",
-        "test_gherkin/features/**/*.feature"
+        "tests/step_definitions/**/*.js",
+        "tests/features/**/*.feature"
     ]
 }

@@ -1,5 +1,4 @@
-import { Selector, t } from `testcafe`;
-
+import { Selector, t } from 'testcafe';
 class HomeTestCafePage {
     constructor () {
         this.elementCheckbox = Selector('input[type="checkbox"][name="remote"]');
