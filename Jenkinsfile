@@ -11,8 +11,10 @@ pipeline {
 
         stage('Running Test'){
             steps{
-                sh "npm run test-chrome"
+                sh "npm run test-chrome"    
+            }
 
+            post{
                 publishHTML target : [
                     allowMissing: false,
                     alwaysLinkToLastBuild: false,
@@ -21,7 +23,7 @@ pipeline {
                     reportFiles: 'ui_automation_reporter.html',
                     reportName: 'Testcafe Automation Report',
                     reportTitles: 'Testcafe Automation REPORT'
-                ]      
+                ]  
             }
         }
     }
