@@ -15,15 +15,17 @@ pipeline {
             }
 
             post{
-                publishHTML target : [
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: false,
-                    keepAll: true,
-                    reportDir: 'reports',
-                    reportFiles: 'ui_automation_reporter.html',
-                    reportName: 'Testcafe Automation Report',
-                    reportTitles: 'Testcafe Automation REPORT'
-                ]  
+                always{
+                    publishHTML target : [
+                        allowMissing: false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll: true,
+                        reportDir: 'reports',
+                        reportFiles: 'ui_automation_reporter.html',
+                        reportName: 'Testcafe Automation Report',
+                        reportTitles: 'Testcafe Automation REPORT'
+                    ] 
+                } 
             }
         }
     }
