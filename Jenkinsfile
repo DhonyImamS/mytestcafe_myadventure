@@ -15,7 +15,7 @@ pipeline {
 
                 publishHTML target : [
                     allowMissing: false,
-                    alwaysLinkToLastBuild: true,
+                    alwaysLinkToLastBuild: false,
                     keepAll: true,
                     reportDir: 'reports',
                     reportFiles: 'ui_automation_reporter.html',
